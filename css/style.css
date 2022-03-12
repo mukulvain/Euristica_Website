@@ -256,9 +256,9 @@ li span {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+/* .nav-menu > li {
   float: left;
-}
+} */
 
 .nav-menu li:hover > ul,
 .nav-menu li.sfHover > ul {
@@ -918,6 +918,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 18px;
 }
 
+.hackathon-dates1 h3{
+  margin-top: 18px;
+}
+.hackathon-dates2 h3{
+  margin-top: 18px;
+}
+.hackathon-dates3 h3{
+  margin-top: 18px;
+}
+
 .timeline ul li:nth-child(odd):before{
   content: '';
   position:absolute;
@@ -975,15 +985,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .hackathon-content{
-  margin-top: 250px;
+  margin-top: -10px;
 }
 
-.hackathon-dates{
+.hackathon-dates1{
   position:absolute;
   top:12px;
-  left:500px;
-  margin:100px;
-  width: 350px;
+  left:510px;
+  margin:0;
+  width: 200px;
   
   color:#fff;
   box-shadow:0 0 0 3px rgba(59,112,239,0.3);
@@ -991,6 +1001,37 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+.hackathon-dates2{
+  position:absolute;
+  top:100px;
+  left:510px;
+  margin:0;
+  width: 200px;
+  
+  color:#fff;
+  box-shadow:0 0 0 3px rgba(59,112,239,0.3);
+  border-radius:18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.hackathon-dates3{
+  position:absolute;
+  top:190px;
+  left:510px;
+  margin:0;
+  width: 200px;
+  
+  color:#fff;
+  box-shadow:0 0 0 3px rgba(59,112,239,0.3);
+  border-radius:18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
@@ -1208,6 +1249,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 #supporters {
   padding: 60px 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#supporters .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #supporters .supporters-wrap {
@@ -1242,21 +1295,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 #supporters img {
   transition: all 0.4s ease-in-out;
   overflow: hidden;
-  height: 50px;
+  height: 190px;
   width: 190px;
+  object-fit: cover;
+  aspect-ratio: ;
 
 }
 
-/* .sponsors--table{
-  display: grid;
-  grid-template-columns: repeat(3, 33%);
-  margin-bottom: 40px;
-} */
 .title-table{
   display: grid;
   grid-template-columns: repeat(2, 49%);
   gap: 2%;
   margin-bottom: 40px;
+  width: 50%;
 
 }
 .gold-table{
@@ -1264,12 +1315,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   grid-template-columns: repeat(3, 33%);
   gap: 0.5%;
   margin-bottom: 40px;
+  width: 75%;
 }
 .silver-table{
   display: grid;
   grid-template-columns: repeat(4, 23%);
   gap: 2%;
   margin-bottom: 40px;
+  width: 100%;
 }
 /*--------------------------------------------------------------
 # F.A.Q Section
@@ -1814,9 +1867,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: calc(1rem * var(--smaller));
   }
   
-  li {
+  /* li {
     font-size: calc(1.1rem * var(--smaller));
-  }
+  } */
   
   li span {
     font-size: calc(3rem * var(--smaller));
