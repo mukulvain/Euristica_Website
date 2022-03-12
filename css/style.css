@@ -873,7 +873,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 .timeline ul{
-  margin:0;
+  margin:0px;
   padding:0 ;
 }
 
@@ -883,7 +883,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height:normal;
   position:relative;
   width:50%;
-  padding: 50px 70px;
+  padding: 50px 90px;
+  margin: 10px;
 }
 
 .timeline ul li .right_content h2{
@@ -911,6 +912,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 5px;
 }
 
+
+
 .left_content h3{
   margin-top: 18px;
 }
@@ -923,7 +926,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background:rgba(59,112,239,1);
   border-radius:50%;
   box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
-  right:-11px;
+  right:-1px;
   top:24px;
   z-index:1;
 }
@@ -936,7 +939,7 @@ body.mobile-nav-active #mobile-nav-toggle {
  background:rgba(59,112,239,1);
   border-radius:50%;
   box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
-  left:-9px;
+  left:1px;
   top:24px;
   z-index: 1;
 }
@@ -944,7 +947,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .timeline ul li:nth-child(odd) .left_content{
   position:absolute;
   top:12px;
-  right:-190px;
+  right:-160px;
   margin:0;
 
   color:#fff;
@@ -959,7 +962,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .timeline ul li:nth-child(even) .left_content{
   position:absolute;
   top:12px;
-  left:-190px;
+  left:-160px;
   margin:0;
   
   color:#fff;
@@ -969,6 +972,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   align-items: center;
   justify-content: center;
   
+}
+
+.hackathon-content{
+  margin-top: 250px;
+}
+
+.hackathon-dates{
+  position:absolute;
+  top:12px;
+  left:500px;
+  margin:100px;
+  width: 350px;
+  
+  color:#fff;
+  box-shadow:0 0 0 3px rgba(59,112,239,0.3);
+  border-radius:18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -1147,6 +1169,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # supporters Section
 --------------------------------------------------------------*/
+.sponsor--img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .sponsor--btn{
   width: 140px;
   height: 50px;
@@ -1210,28 +1241,35 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #supporters img {
   transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  height: 50px;
+  width: 190px;
+
 }
 
-.sponsors--table{
+/* .sponsors--table{
   display: grid;
   grid-template-columns: repeat(3, 33%);
   margin-bottom: 40px;
-}
+} */
 .title-table{
   display: grid;
   grid-template-columns: repeat(2, 49%);
   gap: 2%;
   margin-bottom: 40px;
+
 }
 .gold-table{
   display: grid;
   grid-template-columns: repeat(3, 33%);
   gap: 0.5%;
+  margin-bottom: 40px;
 }
 .silver-table{
   display: grid;
   grid-template-columns: repeat(4, 23%);
-  margin-bottom: 3%px;
+  gap: 2%;
+  margin-bottom: 40px;
 }
 /*--------------------------------------------------------------
 # F.A.Q Section
@@ -1821,30 +1859,40 @@ body.mobile-nav-active #mobile-nav-toggle {
   .timeline:before{
     left:20px;
   }
-  .timeline ul li:nth-child(odd),
   .timeline ul li:nth-child(even){
     width:100%;
     text-align:left;
    padding-left:50px; 
   }
+  .timeline ul li:nth-child(odd){
+    width:100%;
+    text-align:left;
+   padding-left:30px;
+  }
   
   .timeline ul li:nth-child(odd):before
     {
-    top:-18px;
-    left:11px;
+    top:-36px;
+    left:0px;
   
   }
   .timeline ul li:nth-child(even):before
   { 
-    top:-18px;
-    left:11px;
+    top:-36px;
+    left:21px;
   }
   
-    .timeline ul li:nth-child(odd) .left_content,
+
   .timeline ul li:nth-child(even) .left_content
   {
-    top:-30px;
-    left:50px;
+    top:-50px;
+    left: 50px;
+    right:inherit;
+  }
+  .timeline ul li:nth-child(odd) .left_content
+  {
+    top:-50px;
+    left: 30px;
     right:inherit;
   }
 
