@@ -1,3 +1,9 @@
+function pad(num) {
+  num = num.toString();
+  if (num.length == 1) num = "0" + num;
+  return num;
+}
+
 (function () {
   const second = 1000,
         minute = second * 60,
@@ -27,10 +33,10 @@
               distance = countDown - now;
 
               try{
-                document.getElementById("days").innerText = Math.floor(distance / (day)),
-                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+                document.getElementById("days").innerText = pad(Math.floor(distance / (day))),
+                document.getElementById("hours").innerText = pad(Math.floor((distance % (day)) / (hour))),
+                document.getElementById("minutes").innerText = pad(Math.floor((distance % (hour)) / (minute))),
+                document.getElementById("seconds").innerText = pad(Math.floor((distance % (minute)) / second));
               }
 
               catch(err){
