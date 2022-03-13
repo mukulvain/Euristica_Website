@@ -794,7 +794,7 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 
 .about--img{
   overflow: hidden;
-  height: 500px;
+  height: 25rem;
 }
 
 .about--img img{
@@ -823,7 +823,7 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 }
 
 #about p {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -1673,6 +1673,10 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 }
 
 @media (max-width: 1199px) {
+  .about--img{
+    overflow: hidden;
+    height: 20rem;
+  }
   #header .container {
     max-width: 100%;
   }
@@ -1713,6 +1717,10 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 }
 
 @media (max-width: 991px) {
+  .about--img{
+    overflow: hidden;
+    height: 40rem;
+  }
   .carousel{
     width: 90%;
   }
@@ -1746,9 +1754,17 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
   #schedule .nav-tabs a {
     padding: 8px 60px;
   }
+  /* .about--img{
+    overflow: hidden;
+    height: 20rem;
+  } */
 }
 
 @media (max-width: 768px) {
+  .about--img{
+    overflow: hidden;
+    height: 30rem;
+  }
   .back-to-top {
     bottom: 15px;
   }
@@ -1823,6 +1839,10 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 @media (max-width: 574px) {
   #venue .venue-info h3 {
     font-size: 24px;
+  }
+  .about--img{
+    overflow: hidden;
+    height: 25rem;
   }
   
 }
