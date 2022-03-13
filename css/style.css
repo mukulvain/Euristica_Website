@@ -52,6 +52,8 @@ h6 {
 }
 
 .heading--img{
+  /* height: 100px;
+  margin-top: 100px; */
   width: 80%;
   overflow: hidden;
 
@@ -137,9 +139,9 @@ li {
 
 }
 
-li span {
+#countdown li span {
   display: block;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
 }
 
 .emoji {
@@ -310,6 +312,7 @@ li span {
 }
 
 .nav-menu li {
+  padding: 0;
   position: relative;
   white-space: nowrap;
 }
@@ -369,6 +372,9 @@ li span {
   font-weight: 600;
   font-size: 14px;
   outline: none;
+  position: relative;
+  bottom: 17px;
+
 }
 
 .nav-menu .menu-active a,
@@ -423,8 +429,8 @@ li span {
 }
 
 .nav-menu ul {
-  margin: 4px 0 0 0;
-  padding: 10px;
+  margin: 0 0 0 0;
+  padding: 0px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   background: #fff;
   border-radius: 3px;
@@ -497,6 +503,7 @@ li span {
 
 #mobile-nav ul li {
   position: relative;
+  display: block;
 }
 
 #mobile-nav ul li a {
@@ -566,6 +573,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 .heading-date{
   color: white;
+  padding-top: 15px;
   
 }
 
@@ -1762,6 +1770,16 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
     margin-bottom: 40px;
     width: 60%;
     height: 1100px;
+  }
+
+  #countdown li span {
+    display: block;
+    font-size: 3.5rem;
+  }
+
+  #countdown h5 {
+    display: block;
+    font-size: 1rem;
   }
 }
 
