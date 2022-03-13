@@ -79,28 +79,28 @@ jQuery(document).ready(function( $ ) {
   }
 
   // Real view height for mobile devices
-  if (window.matchMedia("(max-width: 767px)").matches) {
-    $('#intro').css({ height: $(window).height() });
-  }
+  // if (window.matchMedia("(max-width: 767px)").matches) {
+  //   $('#intro').css({ height: $(window).height() });
+  // }
 
   // Initiate the wowjs animation library
-  new WOW().init();
+  // new WOW().init();
 
   // Initialize Venobox
-  $('.venobox').venobox({
-    bgcolor: '',
-    overlayColor: 'rgba(6, 12, 34, 0.85)',
-    closeBackground: '',
-    closeColor: '#fff'
-  });
+  // $('.venobox').venobox({
+  //   bgcolor: '',
+  //   overlayColor: 'rgba(6, 12, 34, 0.85)',
+  //   closeBackground: '',
+  //   closeColor: '#fff'
+  // });
 
   // Initiate superfish on nav menu
-  $('.nav-menu').superfish({
-    animation: {
-      opacity: 'show'
-    },
-    speed: 400
-  });
+  // $('.nav-menu').superfish({
+  //   animation: {
+  //     opacity: 'show'
+  //   },
+  //   speed: 400
+  // });
 
   // Mobile Navigation
   if ($('#nav-menu-container').length) {
