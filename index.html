@@ -13,10 +13,11 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -53,8 +54,8 @@
         <ul class="nav-menu">
           <li><a href="#intro">Home<br></a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
           <li><a href="#speakers">Speakers</a></li>
-          <li><a href="#schedule">Schedule</a></li>
           <li><a href="#supporters">Sponsors</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -66,31 +67,33 @@
     Intro Section
   ============================-->
   <section id="intro">
-    <div class="intro-container wow fadeIn">
-      <h1 class="mb-4 pb-0"><img src="img/euristica_img2.png" alt="" title=""></h1>
+    <div class="intro-container">
+      <div class="heading--img"><img src="img/euristica_img2.png" alt="" title=""></div>
+      <h2 class="heading-date">01-07 APRIL 2022</h2>
       <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
         data-autoplay="true"></a> -->
-        <div class="container--countdown">
-          <h2 id="headline">Countdown to the event</h2>
-          <div id="countdown">
-            <ul>
-              <li><span id="days"></span>days</li>
-              <li><span id="hours"></span>Hours</li>
-              <li><span id="minutes"></span>Minutes</li>
-              <li><span id="seconds"></span>Seconds</li>
-            </ul>
-          </div>
-          <div id="content" class="emoji">
-            <span>🥳</span>
-            <span>🎉</span>
-            <span>🎂</span>
-          </div>
+      <div class="container--countdown">
+        <h2 id="headline">Countdown to the event</h2>
+        <div id="countdown">
+          <ul>
+            <li><span class="neon" id="days"></span> <h3 class="neon">Days</h3></li>
+            <li><span class="neon" id="hours"></span><h3 class="neon">Hours</h3></li>
+            <li><span class="neon" id="minutes"></span><h3 class="neon">Minutes</h3></li>
+            <li><span class="neon" id="seconds"></span><h3 class="neon">Seconds</h3></li>
+          </ul>
         </div>
+        <div id="content" class="emoji">
+          <span>🥳</span>
+          <span>🎉</span>
+          <span>🎂</span>
+        </div>
+      </div>
       <a href="#about" class="about-btn scrollto">About The Event</a>
     </div>
   </section>
 
   <main id="main">
+    
 
     <!--==========================
       About Section
@@ -100,24 +103,91 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>About The Event</h2>
-            <p>An annual flagship event hosted by Pclub attracting hundreds of colleges worldwide, organizing various programming related events in cp, dev and cyber security domains in a duration of one week.</p>
+            <p>An annual flagship event hosted by The Programming Club attracting hundreds of colleges worldwide, organizing various programming related events in Competitive Programming, Development and Cyber Security domains in a duration of one week.</p>
           </div>
           <div class="col-lg-3">
             <h3>Where</h3>
-            <p>Downtown Conference Center, New York</p>
+            <p>Virtual Platforms</p>
           </div>
           <div class="col-lg-3">
             <h3>When</h3>
-            <p>Monday to Wednesday<br>10-12 December</p>
+            <p>Friday to Thursday<br>01-07 April</p>
           </div>
         </div>
       </div>
     </section>
 
+
+
+    <!--==========================
+      Events Section
+    ============================-->
+
+    <section id="events">
+      <div class="section-header-events">
+        <h2>Events</h2>
+        <p>Here are some of our events</p>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" interval = false>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/1403653/pexels-photo-1403653.jpeg?cs=srgb&dl=pexels-mihai-vlasceanu-1403653.jpg&fm=jpg" class="d-block w-100" alt="...">
+            <div class="image__overlay">
+              <div class="image__title">DIVIDE BY ZERO</div>
+              <p class="image__decription">
+                Divide by zero is an individual short duration (2 to 2.5 hours) programming contest conducted on codeforces, consisting of 5 - 8 problems based on data structures, algorithmic and implementation skills. (CP Domain)
+              </p>
+              <a href=""><button class="btn-forDetails">VIEW DETAILS</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/225238/pexels-photo-225238.jpeg?cs=srgb&dl=pexels-picjumbocom-225238.jpg&fm=jpg" class="d-block w-100" alt="...">
+            <div class="image__overlay">
+              <div class="image__title">DIVIDE BY ZERO</div>
+              <p class="image__decription">
+                Divide by zero is an individual short duration (2 to 2.5 hours) programming contest conducted on codeforces, consisting of 5 - 8 problems based on data structures, algorithmic and implementation skills. (CP Domain)
+              </p>
+              <a href=""><button class="btn-forDetails">VIEW DETAILS</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/3008100/pexels-photo-3008100.jpeg?cs=srgb&dl=pexels-brett-sayles-3008100.jpg&fm=jpg" class="d-block w-100" alt="...">
+            <div class="image__overlay">
+              <div class="image__title">DIVIDE BY ZERO</div>
+              <p class="image__decription">
+                Divide by zero is an individual short duration (2 to 2.5 hours) programming contest conducted on codeforces, consisting of 5 - 8 problems based on data structures, algorithmic and implementation skills. (CP Domain)
+              </p>
+              <a href=""><button class="btn-forDetails">VIEW DETAILS</button></a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+    </section>
+
     <!--==========================
       Speakers Section
     ============================-->
-    <section id="speakers" class="wow fadeInUp">
+    <section id="speakers">
       <div class="container">
         <div class="section-header">
           <h2>Event Speakers</h2>
@@ -149,7 +219,7 @@
               <div class="details">
                 <h3><a href="speaker-details.html">Cole Emmerich</a></h3>
                 <p>Fugiat laborum et</p>
-              
+
               </div>
             </div>
           </div>
@@ -185,70 +255,12 @@
 
     </section>
 
-    <!--==========================
-      Schedule Section
-    ============================-->
-    <section id="schedule">
-      <h1 class="event-schedule">EVENT SCHEDULE</h1>
-    <div class="timeline">
-      
-      <ul>
-        <li>
-          <div class="right_content">
-            <h2>DIVIDE BY ZERO</h2>
-            <p> Divide by zero is an individual short duration (2 to 2.5 hours) programming contest conducted on codeforces, consisting of 5 - 8 problems based on data structures, algorithmic and implementation skills. (CP Domain)
-            </p>
-          </div>
-          <div class="left_content">
-            <h3>January 2019 </h3>
-          </div>
-        </li>
-        <li>
-          <div class="right_content">
-            <h2>FOOL YOU</h2>
-            <p>Fool You is a programming event far from the usual ‘serious’ programming contests. It is an individual short duration (3 to 4 hours) programming event conducted on CodeChef. (CP Domain)
-            </p>
-          </div>
-          <div class="left_content">
-            <h3>APRIL 1 2022</h3>
-          </div>
-        </li>
-        <li>
-          <div class="right_content">
-            <h2>HACKATHON</h2>
-            <p>A real world problem modeling and solving assessment that involves a unique and interesting problem set, long duration(24 to 48 hours) and team contest. (Dev Domain)
-            </p>
-          </div>
-          <div class="l">
-            <div class="hackathon-dates1"><h3>January 2019 </h3></div>
-            <div class="hackathon-dates2"><h3>January 2019 </h3></div>
-            <div class="hackathon-dates3"><h3>January 2019 </h3></div>
-            
-          </div>
-        </li>
-        
-        <li>
-          <div class="right_content">
-            <h2>CAPTURE THE FLAG</h2>
-            <p>A special kind of cybersecurity long duration(24 to 48 hours) competition designed to challenge it’s participants with state of art computer problems that capture or defend computer systems,its a team contest.  (Cyber Security Domain)
-            </p>
-          </div>
-          <div class="left_content">
-            <h3>May 2019 </h3>
-          </div>
-        </li>
-        
-        <div style="clear:both;"></div>
-
-      </ul>
-    </div>
-    </section>
     
 
     <!--==========================
       Sponsors Section
     ============================-->
-    <section id="supporters" class="section-with-bg wow fadeInUp">
+    <section id="supporters" class="section-with-bg">
 
       <div class="container">
         <div class="section-header">
@@ -257,7 +269,7 @@
 
         <h3>Title Sponsors</h3>
         <div class="sponsors--table title-table">
-          
+
           <div class="sponsor--img">
             <img src="img/sponsor.png" class="img-fluid" alt="">
           </div>
@@ -267,7 +279,7 @@
         </div>
         <h3>Gold Sponsors</h3>
         <div class="sponsors--table gold-table">
-          
+
           <div class="sponsor--img">
             <img src="img/sponsor.png" class="img-fluid" alt="">
           </div>
@@ -280,7 +292,7 @@
         </div>
         <h3>Silver Sponsors</h3>
         <div class="sponsors--table silver-table">
-          
+
           <div class="sponsor--img">
             <img src="img/sponsor.png" class="img-fluid" alt="">
           </div>
@@ -295,30 +307,34 @@
           </div>
         </div>
 
-        </div>
+      </div>
 
-        <div class="want--to--sponsor">
-          <h5>Want to be sponsor?</h5>
-          <a href="#"><button class="sponsor--btn">APPLY HERE</button></a>
-        </div>
+      <div class="want--to--sponsor">
+        <h5>Want to be sponsor?</h5>
+        <a href="#"><button class="sponsor--btn">APPLY HERE</button></a>
+      </div>
 
 
       </div>
 
     </section>
 
-    
+
 
     <!--==========================
       Contact Section
     ============================-->
-    <section id="contact" class="section-bg wow fadeInUp">
+    <section id="contact" class="section-bg">
 
       <div class="container">
 
         <div class="section-header">
           <h2>Contact Us</h2>
         </div>
+        <div class="team-details">
+          <a href="speaker-details.html"><button class="sponsor--btn">TEAM DETAILS</button></a>
+        </div>
+        
 
         <div class="row contact-info">
 
@@ -326,9 +342,10 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Address</h3>
-              <address>IIT Indore,
-                Indore, Madhya Pradesh,
-                India <br></address>
+              <address>Indian Institute of Technology Indore<br> 
+                Khandwa Road, Simrol<br> 
+                Indore 453552<br>  
+                INDIA<br> </address>
             </div>
           </div>
 
@@ -336,7 +353,8 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+              <p><a href="tel:+918770423627"><br>+91 8770423627</a><br><a href="tel:+919324010466"><br>+91 9324010466</a></p>
+              <!-- <p><a href="tel:+919324010466"><br>+91 9324010466</a></p> -->
             </div>
           </div>
 
@@ -344,13 +362,13 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:progclub@iiti.ac.in">progclub@iiti.ac.in</a></p>
+              <p><a href="mailto:euristica@iiti.ac.in">euristica@iiti.ac.in</a></p>
             </div>
           </div>
 
         </div>
 
-        
+
     </section><!-- #contact -->
 
   </main>
@@ -366,40 +384,35 @@
 
           <div class="col-lg-4 col-md-6 footer-info">
             <a href="#intro" class="scrollto"><img src="img/euristica_img2.png" alt="" title=""></a>
-            <p>An annual flagship event hosted by Pclub attracting hundreds of colleges worldwide, organizing various programming related events in cp, dev and cyber security domains in a duration of one week.</p>
+            <p>An annual flagship event hosted by The Programming Club attracting hundreds of colleges worldwide, organizing various programming related events in Competitive Programming, Development and Cyber Security domains in a duration of one week..</p>
           </div>
 
-      
+
 
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-              <ul class="nav-menu">
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#speakers">Speakers</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#supporters">Sponsors</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contact Us</h4>
-            <p>
-              IIT Indore <br>
-              Indore, Madhya Pradesh<br>
-              India <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> progclub@iiti.ac.in<br>
-            </p>
-
+            <strong>Phone:</strong><br>+91 8770423627<br>+91 9324010466
             <div class="social-links">
+              
               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
               <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Address</h4>
+            <p>
+              Indian Institute of Technology Indore<br> 
+              Khandwa Road, Simrol<br> 
+              Indore 453552<br>  
+              INDIA<br> 
+              
+            </p>
+
+            
 
           </div>
 
@@ -409,16 +422,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; Copyright <strong>Euristica2022</strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- #footer -->
@@ -426,9 +430,14 @@
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>

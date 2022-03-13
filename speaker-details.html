@@ -13,10 +13,11 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -40,70 +41,89 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header" class="header-fixed">
+  <header id="header">
     <div class="container">
 
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="index.html#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+        <a href="#intro" class="scrollto"><img src="img/euristica_img2.png" alt="" title=""></a>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="index.html#intro">Home<br></a></li>
           <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#speakers">Speakers</a></li>
-          <li><a href="index.html#schedule">Schedule</a></li>
-          <li><a href="index.html#venue">Venue</a></li>
-          <li><a href="index.html#hotels">Hotels</a></li>
-          <li><a href="index.html#gallery">Gallery</a></li>
-          <li><a href="index.html#supporters">supporters</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-          <li class="buy-tickets"><a href="index.html#buy-tickets">Buy Tickets</a></li>
+          <li><a href="index.html#events">Events</a></li>
+          <li><a href="index.html#supporters">Speakers</a></li>
+          <li><a href="index.html#sponsors">Sponsors</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
 
-  <main id="main" class="main-page">
+
+  <section id="intro" style="height: 90px;">
+    <div class="intro-container" style="height: 100px;">
+    </div>
+  </section>
+
+    
+
+   
+
+
 
     <!--==========================
-      Speaker Details Section
+      Contact Section
     ============================-->
-    <section id="speakers-details" class="wow fadeIn">
+    <section id="contact" class="section-bg wow fadeInUp">
+
       <div class="container">
+
         <div class="section-header">
-          <h2>Speaker Details</h2>
-          <p>Praesentium ut qui possimus sapiente nulla.</p>
+          <h2>Contact Us</h2>
         </div>
+        <div class="team-details">
+          <a href="speaker-details.html"><button class="sponsor--btn">TEAM DETAILS</button></a>
+        </div>
+        
 
-        <div class="row">
-          <div class="col-md-6">
-            <img src="img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-          </div>
+        <div class="row contact-info">
 
-          <div class="col-md-6">
-            <div class="details">
-              <h2>Brenden Legros</h2>
-              <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
-              <p>Voluptatem perferendis sed assumenda voluptatibus. Laudantium molestiae sint. Doloremque odio dolore dolore sit. Quae labore alias ea omnis ex expedita sapiente molestias atque. Optio voluptas et.</p>
- 
-              <p>Aboriosam inventore dolorem inventore nam est esse. Aperiam voluptatem nisi molestias laborum ut. Porro dignissimos eum. Tempore dolores minus unde est voluptatum incidunt ut aperiam.</p> 
-
-              <p>Et dolore blanditiis officiis non quod id possimus. Optio non commodi alias sint culpa sapiente nihil ipsa magnam. Qui eum alias provident omnis incidunt aut. Eius et officia corrupti omnis error vel quia omnis velit. In qui debitis autem aperiam voluptates unde sunt et facilis.</p>
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>Indian Institute of Technology Indore<br> 
+                Khandwa Road, Simrol<br> 
+                Indore 453552<br>  
+                INDIA<br> </address>
             </div>
           </div>
-          
-        </div>
-      </div>
 
-    </section>
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+918770423627"><br>+91 8770423627</a><br><a href="tel:+919324010466"><br>+91 9324010466</a></p>
+              <!-- <p><a href="tel:+919324010466"><br>+91 9324010466</a></p> -->
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:euristica@iiti.ac.in">euristica@iiti.ac.in</a></p>
+            </div>
+          </div>
+
+        </div>
+
+
+    </section><!-- #contact -->
 
   </main>
 
@@ -116,50 +136,37 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <img src="img/logo.png" alt="TheEvenet">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+          <div class="col-lg-4 col-md-6 footer-info">
+            <a href="#intro" class="scrollto"><img src="img/euristica_img2.png" alt="" title=""></a>
+            <p>An annual flagship event hosted by The Programming Club attracting hundreds of colleges worldwide, organizing various programming related events in Competitive Programming, Development and Cyber Security domains in a duration of one week..</p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
+            <strong>Phone:</strong><br>+91 8770423627<br>+91 9324010466
             <div class="social-links">
+              
               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
               <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Address</h4>
+            <p>
+              Indian Institute of Technology Indore<br> 
+              Khandwa Road, Simrol<br> 
+              Indore 453552<br>  
+              INDIA<br> 
+              
+            </p>
+
+            
 
           </div>
 
@@ -169,16 +176,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        &copy; Copyright <strong>Euristica2022</strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- #footer -->
@@ -186,9 +184,14 @@
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/superfish/hoverIntent.js"></script>
   <script src="lib/superfish/superfish.min.js"></script>
