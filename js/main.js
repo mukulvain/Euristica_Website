@@ -12,21 +12,21 @@ function pad(num) {
 
   //I'm adding this section so I don't have to keep updating this pen every year :-)
   //remove this if you don't need it
-  let today = new Date(),
-      dd = String(today.getDate()).padStart(2, "0"),
-      mm = String(today.getMonth() + 1).padStart(2, "0"),
-      yyyy = today.getFullYear(),
-      nextYear = yyyy,
-      dayMonth = "04/01/",
-      birthday = dayMonth + yyyy;
+  // let today = new Date(),
+  //     dd = String(today.getDate()).padStart(2, "0"),
+  //     mm = String(today.getMonth() + 1).padStart(2, "0"),
+  //     yyyy = today.getFullYear(),
+  //     nextYear = yyyy,
+  //     dayMonth = "04/01/",
+  //     birthday = dayMonth + yyyy;
   
-  today = mm + "/" + dd + "/" + yyyy;
-  if (today > birthday) {
-    birthday = dayMonth + nextYear;
-  }
+  // today = mm + "/" + dd + "/" + yyyy;
+  // if (today > birthday) {
+  //   birthday = dayMonth + nextYear;
+  // }
   //end
   
-  const countDown = new Date(birthday).getTime(),
+  const countDown = new Date(2022, 3, 1, 15, 0, 0).getTime(),
       x = setInterval(function() {    
 
         const now = new Date().getTime(),
@@ -46,9 +46,9 @@ function pad(num) {
 
         //do something later when date is reached
         if (distance < 0) {
-          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("headline").innerText = "Events Started!!";
           document.getElementById("countdown").style.display = "none";
-          document.getElementById("content").style.display = "block";
+          // document.getElementById("content").style.display = "block";
           clearInterval(x);
         }
         //seconds
