@@ -737,7 +737,7 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 
 #intro .about-btn:hover {
   background: #84fff7;
-  color: #fff;
+  color: black;
 }
 
 @-webkit-keyframes pulsate-btn {
