@@ -26,7 +26,7 @@ function pad(num) {
   // }
   //end
   
-  const countDown = new Date(2022, 3, 1, 15, 0, 0).getTime(),
+  const countDown = new Date(2022, 3, 15, 15, 0, 0).getTime(),
       x = setInterval(function() {    
 
         const now = new Date().getTime(),
