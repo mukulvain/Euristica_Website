@@ -1,3 +1,9 @@
+function pad(num) {
+  num = num.toString();
+  if (num.length == 1) num = "0" + num;
+  return num;
+}
+
 (function () {
   const second = 1000,
         minute = second * 60,
@@ -6,31 +12,31 @@
 
   //I'm adding this section so I don't have to keep updating this pen every year :-)
   //remove this if you don't need it
-  let today = new Date(),
-      dd = String(today.getDate()).padStart(2, "0"),
-      mm = String(today.getMonth() + 1).padStart(2, "0"),
-      yyyy = today.getFullYear(),
-      nextYear = yyyy,
-      dayMonth = "04/01/",
-      birthday = dayMonth + yyyy;
+  // let today = new Date(),
+  //     dd = String(today.getDate()).padStart(2, "0"),
+  //     mm = String(today.getMonth() + 1).padStart(2, "0"),
+  //     yyyy = today.getFullYear(),
+  //     nextYear = yyyy,
+  //     dayMonth = "04/01/",
+  //     birthday = dayMonth + yyyy;
   
-  today = mm + "/" + dd + "/" + yyyy;
-  if (today > birthday) {
-    birthday = dayMonth + nextYear;
-  }
+  // today = mm + "/" + dd + "/" + yyyy;
+  // if (today > birthday) {
+  //   birthday = dayMonth + nextYear;
+  // }
   //end
   
-  const countDown = new Date(birthday).getTime(),
+  const countDown = new Date(2022, 3, 1, 15, 0, 0).getTime(),
       x = setInterval(function() {    
 
         const now = new Date().getTime(),
               distance = countDown - now;
 
               try{
-                document.getElementById("days").innerText = Math.floor(distance / (day)),
-                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+                document.getElementById("days").innerText = pad(Math.floor(distance / (day))),
+                document.getElementById("hours").innerText = pad(Math.floor((distance % (day)) / (hour))),
+                document.getElementById("minutes").innerText = pad(Math.floor((distance % (hour)) / (minute))),
+                document.getElementById("seconds").innerText = pad(Math.floor((distance % (minute)) / second));
               }
 
               catch(err){
@@ -40,9 +46,9 @@
 
         //do something later when date is reached
         if (distance < 0) {
-          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("headline").innerText = "Events Started!!";
           document.getElementById("countdown").style.display = "none";
-          document.getElementById("content").style.display = "block";
+          // document.getElementById("content").style.display = "block";
           clearInterval(x);
         }
         //seconds
