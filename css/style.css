@@ -733,6 +733,7 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid #84fff7;
+  display: none;
 }
 
 #intro .about-btn:hover {
@@ -1717,6 +1718,9 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 }
 
 @media (max-width: 767px) {
+  #intro .about-btn{
+    display: block;
+  }
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }
@@ -1742,6 +1746,9 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 
 
 @media (max-width: 574px) {
+  #intro .about-btn{
+    display: block;
+  }
   #venue .venue-info h3 {
     font-size: 24px;
   }
