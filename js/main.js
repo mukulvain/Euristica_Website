@@ -26,33 +26,35 @@ function pad(num) {
   // }
   //end
   
-  const countDown = new Date(2022, 3, 15, 15, 0, 0).getTime(),
-      x = setInterval(function() {    
+  // const countDown = new Date(2022, 3, 15, 15, 0, 0).getTime(),
+  document.getElementById("headline").innerText = "Events Started!!";
+  document.getElementById("countdown").style.display = "none";
+  document.getElementById("content").style.display = "block";
 
-        const now = new Date().getTime(),
-              distance = countDown - now;
+          
+      // x = setInterval(function() {    
 
-              try{
-                document.getElementById("days").innerText = pad(Math.floor(distance / (day))),
-                document.getElementById("hours").innerText = pad(Math.floor((distance % (day)) / (hour))),
-                document.getElementById("minutes").innerText = pad(Math.floor((distance % (hour)) / (minute))),
-                document.getElementById("seconds").innerText = pad(Math.floor((distance % (minute)) / second));
-              }
+      //   const now = new Date().getTime(),
+      //         distance = countDown - now;
+      //         console.log(distance)
+      //         try{
+      //           document.getElementById("days").innerText = pad(Math.floor(distance / (day))),
+      //           document.getElementById("hours").innerText = pad(Math.floor((distance % (day)) / (hour))),
+      //           document.getElementById("minutes").innerText = pad(Math.floor((distance % (hour)) / (minute))),
+      //           document.getElementById("seconds").innerText = pad(Math.floor((distance % (minute)) / second));
+      //         }
 
-              catch(err){
-                //pass
-              }
+      //         catch(err){
+      //           //pass
+      //         }
           
 
-        //do something later when date is reached
-        if (distance < 0) {
-          document.getElementById("headline").innerText = "Events Started!!";
-          document.getElementById("countdown").style.display = "none";
-          // document.getElementById("content").style.display = "block";
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
+      //   //do something later when date is reached
+      //   if (distance < 0) {
+      //     clearInterval(x);
+      //   }
+      //   //seconds
+      // }, 3000)
   }());
 
 
