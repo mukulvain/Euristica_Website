@@ -1081,7 +1081,7 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 # supporters Section
 --------------------------------------------------------------*/
 .sponsor--img{
-  background-color:white;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
