@@ -936,11 +936,14 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 
 }
 .btn-forDetails{
-  background-color: #04091900;
-  color: white;
-  border: 1px solid white;
+  /* background-color: #04091900; */
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  border: 1px solid black;
   transition: transform 200ms;
   margin-bottom: 10px;
+  padding: 10px
 }
 
 .btn-forDetails:hover{
@@ -1081,7 +1084,7 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 # supporters Section
 --------------------------------------------------------------*/
 .sponsor--img{
-  background-color: white;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1089,7 +1092,8 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
   width: 100%;
   object-fit: cover;
   overflow: hidden;
-  border: 1px solid rgb(190, 190, 190);
+  /* border: 1px solid rgb(190, 190, 190); */
+  border: 1px solid #ffd700;
 }
 
 .sponsor--btn{
