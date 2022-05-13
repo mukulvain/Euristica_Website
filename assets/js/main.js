@@ -63,12 +63,8 @@
         slidesCount = slick.slideCount;
         $(sliderCounter).html(
           '<div class="slideActive">' +
-            "0" +
-            currentSlide +
             "</div>" +
             '<div class="totalSlide">' +
-            "0" +
-            slidesCount +
             "</div>"
         );
       };
