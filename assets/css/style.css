@@ -1591,7 +1591,7 @@ nav .main-menu2 li a::before {
 }
 .hero-area .hero_shapes .vec_2 {
   position: absolute;
-  top: 22%;
+  top: 15%;
   left: 19%;
 }
 .hero-area .hero_shapes .vec_3 {
@@ -1620,7 +1620,7 @@ nav .main-menu2 li a::before {
   top: 32%;
 }
 .hero-area .hero-left {
-  padding-top: 170px;
+  padding-top: 100px;
 }
 @media (max-width: 991.98px) {
   .hero-area .hero-left {
