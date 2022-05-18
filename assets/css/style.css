@@ -2278,7 +2278,7 @@ nav .main-menu2 li a::before {
   transition: all 0.3s ease-in;
   margin-bottom: 30px;
   position: relative;
-  background: #fff;
+  background: #080d1f;
   -webkit-box-shadow: 0 3px 24px rgb(0 0 0/10%);
   box-shadow: 0 3px 24px rgb(0 0 0/10%);
 }
