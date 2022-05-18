@@ -936,13 +936,9 @@ background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 
 }
 .btn-forDetails{
-  /* background-color: #04091900; */
-  /* background-color: white; */
-  /* border-radius: 10px; */
   background: transparent;
   border:transparent;
   color: white;
-  /* border: 1px solid black; */
   transition: transform 200ms;
   margin-bottom: 10px;
   padding: 10px
